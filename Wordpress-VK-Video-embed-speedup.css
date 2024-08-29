@@ -1,0 +1,66 @@
+/* оформление заглушки для видео с кнопкой play */
+
+.videoplayer_thumb {
+	width: 100%;
+	padding-top: 56.25%; /* Соотношение 16:9 */
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	cursor: pointer;
+	border-radius: 8px;
+	border: 4px solid var(--accent-color-alt);
+	transition: border-color .2s ease-in-out;
+}
+
+.play-icon-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: var(--accent-color);
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 8px;
+}
+
+.videoplayer_thumb:hover .play-icon svg {
+	transform: scale(1.2);
+}
+
+.videoplayer_thumb:hover {
+	border-color: var(--accent-color);
+}
+
+.play-icon svg {
+	fill: #fff; /* Цвет иконки */
+	transition: transform .2s ease-in-out;
+}
+
+.youtube-video,
+.vk-video,
+.videoplayer_thumb
+{
+	width: 100%!important;
+	aspect-ratio: 16 / 9.05!important;
+}
+
+
+.youtube-video,
+.vk-video,
+.videoplayer_thumb
+{
+	background-color: var(--card-background);
+	box-shadow: var(--shadow-elevation-medium);
+}
+
+.youtube-video,
+.vk-video
+{
+	border: 4px solid var(--accent-color);
+}
+
+/* оформление заглушки для видео с кнопкой play */
